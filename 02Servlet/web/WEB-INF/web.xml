@@ -8,10 +8,20 @@
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>com.junjie.helloServlet.HelloServlet</servlet-class>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ParameterServlet</servlet-name>
+        <servlet-class>com.junjie.helloServlet.ParameterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ParameterServlet</servlet-name>
+        <url-pattern>/parameterServlet</url-pattern>
     </servlet-mapping>
     
 </web-app>
