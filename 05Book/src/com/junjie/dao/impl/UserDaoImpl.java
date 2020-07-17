@@ -4,9 +4,10 @@ import com.junjie.dao.UserDao;
 import com.junjie.pojo.User;
 
 public class UserDaoImpl extends BaseDao implements UserDao {
+
     @Override
     public User queryUserByUsername(String username) {
-        String sql = "select `id`, `username`, `password`, `email`, from t_user where username = ?";
+        String sql = "select `id`,`username`,`password`,`email` from t_user where username = ?";
         return queryForOne(User.class, sql, username);
     }
 
