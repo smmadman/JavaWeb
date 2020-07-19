@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-public class BaseDao {
+public abstract class BaseDao {
 
     private QueryRunner queryRunner = new QueryRunner();
 

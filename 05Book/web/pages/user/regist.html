@@ -5,8 +5,8 @@
 <title>尚硅谷会员注册页面</title>
 	<!--  写base路径，永远固定相对路径跳转的结果	-->
 	<base href="http://localhost:8080/05Book/">
-	<link type="text/css" rel="stylesheet" href="../../static/css/style.css" >
-	<script type="text/javascript" src="../../static/script/jquery-1.7.2.js"></script>
+	<link type="text/css" rel="stylesheet" href="static/css/style.css" >
+	<script type="text/javascript" src="static/script/jquery-1.7.2.js"></script>
 	<script type="text/javascript">
 		// 页面加载完成之后
 		$(function () {
@@ -84,7 +84,7 @@
 </head>
 <body>
 		<div id="login_header">
-			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
+			<img class="logo_img" alt="" src="static/img/logo.gif" >
 		</div>
 		
 			<div class="login_banner">
@@ -101,7 +101,7 @@
 								<span class="errorMsg"></span>
 							</div>
 							<div class="form">
-								<form action="registServlet">
+								<form action="registServlet" method="post">
 									<label>用户名称：</label>
 									<input class="itxt" type="text" placeholder="请输入用户名"
 										   autocomplete="off" tabindex="1" name="username" id="username" />
@@ -123,8 +123,8 @@
 									<br />
 									<br />
 									<label>验证码：</label>
-									<input class="itxt" type="text" style="width: 150px;" id="code"/>
-									<img alt="" src="../../static/img/code.bmp" style="float: right; margin-right: 40px">									
+									<input class="itxt" type="text" name="code" style="width: 150px;"  id="code"/>
+									<img alt="" src="static/img/code.bmp" style="float: right; margin-right: 40px">
 									<br />
 									<br />
 									<input type="submit" value="注册" id="sub_btn" />
