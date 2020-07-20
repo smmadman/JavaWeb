@@ -22,6 +22,9 @@ public class LoginServlet extends HttpServlet {
         User loginUser = userService.login(new User(null, username, password, null));
 
         if(loginUser == null){
+            req.setAttribute("msg", "用户名或密码错误~");
+            req.setAttribute("username", username);
+
             System.out.println("用户名或密码错误，请重新登陆！");
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         } else {
