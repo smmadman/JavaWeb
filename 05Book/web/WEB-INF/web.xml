@@ -4,25 +4,25 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     
-    <servlet>
-        <servlet-name>RegistServlet</servlet-name>
-        <servlet-class>com.junjie.web.RegistServlet</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>RegistServlet</servlet-name>
-        <url-pattern>/registServlet</url-pattern>
-    </servlet-mapping>
+<!--    <servlet>-->
+<!--        <servlet-name>RegistServlet</servlet-name>-->
+<!--        <servlet-class>com.junjie.obsoleted.RegistServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    -->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>RegistServlet</servlet-name>-->
+<!--        <url-pattern>/registServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 
-    <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.junjie.web.LoginServlet</servlet-class>
-    </servlet>
+<!--    <servlet>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <servlet-class>com.junjie.obsoleted.LoginServlet</servlet-class>-->
+<!--    </servlet>-->
 
-    <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/loginServlet</url-pattern>
-    </servlet-mapping>
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LoginServlet</servlet-name>-->
+<!--        <url-pattern>/loginServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 
     <servlet>
         <servlet-name>UserServlet</servlet-name>
@@ -32,6 +32,16 @@
     <servlet-mapping>
         <servlet-name>UserServlet</servlet-name>
         <url-pattern>/userServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>com.junjie.web.BookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/manager/bookServlet</url-pattern>
     </servlet-mapping>
 
 </web-app>

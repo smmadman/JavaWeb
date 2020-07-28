@@ -1,4 +1,4 @@
-package com.junjie.web;
+package com.junjie.obsoleted;
 
 import com.junjie.pojo.User;
 import com.junjie.service.UserService;
